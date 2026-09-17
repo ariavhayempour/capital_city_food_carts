@@ -233,6 +233,10 @@ const MENU_CONFIG: Record<string, MenuConfig> = {
   "bulgogi_korean": {
     type: 'categorized',
     categoryOrder: ["Entrees"]
+  },
+  "pagoda_smoothies": {
+    type: 'categorized',
+    categoryOrder: ["Smoothies", "Tapioca Freeze", "Boba Milk Tea (Hot / Cold)", "Flavored Ice Tea (with Jelly / Tapioca)", "Other Drinks", "Toppings"]
   }
 };
 

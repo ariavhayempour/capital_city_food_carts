@@ -1695,23 +1695,204 @@
     "id": 21
   },
   {
-    "slug": "tbd-2",
-    "name": "TBD",
-    "description": "TBD",
-    "image": "",
-    "category": "sandwiches",
+    "slug": "pagoda_smoothies",
+    "name": "Pagoda Smoothies",
+    "description": "Fresh smoothies, boba, and tea.",
+    "image": "/pagoda_pic.jpg",
+    "category": "drinks",
     "location": "state-street-library-mall",
-    "locationDisplayName": "TBD",
-    "mapsUrl": "",
-    "menu": [],
+    "locationDisplayName": "State Street & Library Mall",
+    "mapsUrl": "https://maps.google.com/?q=43.075000,-89.398361",
+    "menu": [
+      {
+        "name": "Strawberry Banana",
+        "price": "$7.00",
+        "description": "",
+        "category": "Smoothies"
+      },
+      {
+        "name": "Pineapple",
+        "price": "$7.00",
+        "description": "",
+        "category": "Smoothies"
+      },
+      {
+        "name": "Strawberry",
+        "price": "$7.00",
+        "description": "",
+        "category": "Smoothies"
+      },
+      {
+        "name": "Honeydew",
+        "price": "$7.00",
+        "description": "",
+        "category": "Smoothies"
+      },
+      {
+        "name": "Mango",
+        "price": "$7.00",
+        "description": "",
+        "category": "Smoothies"
+      },
+      {
+        "name": "Taro",
+        "price": "$7.00",
+        "description": "",
+        "category": "Tapioca Freeze"
+      },
+      {
+        "name": "Matcha",
+        "price": "$7.00",
+        "description": "",
+        "category": "Tapioca Freeze"
+      },
+      {
+        "name": "Mocha",
+        "price": "$7.00",
+        "description": "",
+        "category": "Tapioca Freeze"
+      },
+      {
+        "name": "Taro Red Bean",
+        "price": "$7.00",
+        "description": "",
+        "category": "Tapioca Freeze"
+      },
+      {
+        "name": "Matcha Red Bean",
+        "price": "$7.00",
+        "description": "",
+        "category": "Tapioca Freeze"
+      },
+      {
+        "name": "Red Bean",
+        "price": "$7.00",
+        "description": "",
+        "category": "Tapioca Freeze"
+      },
+      {
+        "name": "Original",
+        "price": "$7.00",
+        "description": "",
+        "category": "Boba Milk Tea (Hot / Cold)"
+      },
+      {
+        "name": "Matcha",
+        "price": "$7.00",
+        "description": "",
+        "category": "Boba Milk Tea (Hot / Cold)"
+      },
+      {
+        "name": "Thai",
+        "price": "$7.00",
+        "description": "",
+        "category": "Boba Milk Tea (Hot / Cold)"
+      },
+      {
+        "name": "Taro",
+        "price": "$7.00",
+        "description": "",
+        "category": "Boba Milk Tea (Hot / Cold)"
+      },
+      {
+        "name": "Peach",
+        "price": "$7.00",
+        "description": "",
+        "category": "Boba Milk Tea (Hot / Cold)"
+      },
+      {
+        "name": "Coconut",
+        "price": "$7.00",
+        "description": "",
+        "category": "Boba Milk Tea (Hot / Cold)"
+      },
+      {
+        "name": "Strawberry",
+        "price": "$7.00",
+        "description": "",
+        "category": "Boba Milk Tea (Hot / Cold)"
+      },
+      {
+        "name": "Mango",
+        "price": "$7.00",
+        "description": "",
+        "category": "Boba Milk Tea (Hot / Cold)"
+      },
+      {
+        "name": "Red Bean",
+        "price": "$7.00",
+        "description": "",
+        "category": "Boba Milk Tea (Hot / Cold)"
+      },
+      {
+        "name": "Almond",
+        "price": "$7.00",
+        "description": "",
+        "category": "Boba Milk Tea (Hot / Cold)"
+      },
+      {
+        "name": "Peach Green / Black Tea",
+        "price": "$7.00",
+        "description": "",
+        "category": "Flavored Ice Tea (with Jelly / Tapioca)"
+      },
+      {
+        "name": "Mango Green / Black Tea",
+        "price": "$7.00",
+        "description": "",
+        "category": "Flavored Ice Tea (with Jelly / Tapioca)"
+      },
+      {
+        "name": "Lemon Green / Black Tea",
+        "price": "$7.00",
+        "description": "",
+        "category": "Flavored Ice Tea (with Jelly / Tapioca)"
+      },
+      {
+        "name": "Ice Green / Black Tea",
+        "price": "$4.00",
+        "description": "",
+        "category": "Other Drinks"
+      },
+      {
+        "name": "Fresh Squeezed Lemonade",
+        "price": "$6.00",
+        "description": "",
+        "category": "Other Drinks"
+      },
+      {
+        "name": "Bottle Water (20oz)",
+        "price": "",
+        "description": "",
+        "category": "Other Drinks"
+      },
+      {
+        "name": "Tapioca (Black Pearls)",
+        "price": "",
+        "description": "",
+        "category": "Toppings"
+      },
+      {
+        "name": "Popping Boba",
+        "price": "",
+        "description": "Mango or strawberry.",
+        "category": "Toppings"
+      },
+      {
+        "name": "Jelly",
+        "price": "",
+        "description": "Lychee or mango.",
+        "category": "Toppings"
+      }
+    ],
     "schedule": {
-      "Monday": "TBD",
-      "Tuesday": "TBD",
-      "Wednesday": "TBD",
-      "Thursday": "TBD",
-      "Friday": "TBD",
-      "Saturday": "TBD",
-      "Sunday": "TBD"
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "Closed",
+      "Thursday": "11:00 am - 4:00 pm",
+      "Friday": "11:00 am - 4:00 pm",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
     },
     "id": 22
   }
