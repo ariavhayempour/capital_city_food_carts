@@ -2583,6 +2583,15 @@ textarea.form-textarea {
   font-weight: 600;
 }
 
+/* Protein/flavor choices are equal options, not size upsells — render every
+   price identically instead of headline-plus-subordinate. */
+.menu-item-price.dual.uniform span {
+  font-family: 'Archivo Black', sans-serif;
+  color: var(--red);
+  font-size: 0.92rem;
+  font-weight: normal;
+}
+
 .menu-external-message {
   font-family: 'Archivo', sans-serif;
   color: var(--ink-soft);

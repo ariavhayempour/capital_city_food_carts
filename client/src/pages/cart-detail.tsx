@@ -76,7 +76,7 @@ function MultiPriceMenuItem({ item, index }: MenuItemProps) {
         <div className="menu-item-name">{item.name}</div>
         {hasDescription && <div className="menu-item-desc">{item.description}</div>}
       </div>
-      <div className="menu-item-price dual">
+      <div className="menu-item-price dual uniform">
         {prices.map((p, i) => (
           i === 0 ? <b key={i}>{p.trim()}</b> : <span key={i}>{p.trim()}</span>
         ))}
@@ -229,6 +229,14 @@ const MENU_CONFIG: Record<string, MenuConfig> = {
   "hibachi_hut": {
     type: 'categorized',
     categoryOrder: ["Hibachi", "Drinks"]
+  },
+  "bulgogi_korean": {
+    type: 'categorized',
+    categoryOrder: ["Entrees"]
+  },
+  "pagoda_smoothies": {
+    type: 'categorized',
+    categoryOrder: ["Smoothies", "Tapioca Freeze", "Boba Milk Tea (Hot / Cold)", "Flavored Ice Tea (with Jelly / Tapioca)", "Other Drinks", "Toppings"]
   }
 };
 
@@ -284,7 +292,7 @@ function MenuContent({ cart }: MenuContentProps) {
       return <ChinaCottageMenu cart={cart} categoryOrder={config.categoryOrder || []} />;
 
     case 'categorized': {
-      const renderItem = cart.slug === 'bombay'
+      const renderItem = cart.slug === 'bombay' || cart.slug === 'bulgogi_korean'
         ? (item: MenuItem, index: number) => <MultiPriceMenuItem key={index} item={item} index={index} />
         : undefined;
       return <CategorizedMenu menu={cart.menu} categoryOrder={config.categoryOrder || []} renderItem={renderItem} />;
