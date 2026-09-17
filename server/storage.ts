@@ -820,11 +820,57 @@ export class MemStorage implements IStorage {
         }
       },
 
+      // bulgogi korean tacos
+      {
+        slug: "bulgogi_korean",
+        name: "Bulgogi Korean Tacos",
+        description: "Korean-Mexican bulgogi fusion.",
+        image: "/bulgogi_pic.jpg",
+        category: "asian",
+        location: "state-street-library-mall",
+        locationDisplayName: "State Street & Library Mall",
+        mapsUrl: "https://maps.google.com/?q=43.075000,-89.398361",
+        menu: [
+          { name: "Bulgogi Taco", price: "Chicken: $13.00, Steak: $16.00", description: "Grilled with korean bulgogi barbecue sauce and topped with julienned cucumber, scallions, lettuce, and kimchi.", category: "Entrees" },
+          { name: "Bibimbap Burrito", price: "Chicken: $13.00, Steak: $16.00", description: "Wrapped tightly with our house mad bibimbap rice, tomatoes, sliced cucumbers, and lettuce. All mixed with gochojang for that true bibimbap flavor.", category: "Entrees" },
+          { name: "Bulgogi Quesadilla", price: "Chicken: $13.00, Steak: $16.00", description: "Grilled with korean bulgogi barbecue sauce encased in a tortilla stuffed with melted Monterey Jack Cheese. Served with a side salad.", category: "Entrees" },
+          { name: "Bulgogi Salad", price: "Chicken: $13.00, Steak: $16.00", description: "Fresh organic spring mix topped with chicken or steak grilled in korean bulgogi barbecue sauce, diced tomatoes, sliced cucumber, scallions, and kimchi.", category: "Entrees" },
+          { name: "Bulgogi Mix Rice", price: "Chicken: $13.00, Steak: $16.00", description: "Our house made bulgogi chicken or steak, spinach, cilantro, kimchi, fried egg over rice mix with gochojang.", category: "Entrees" }
 
+        ],
+        schedule: {
+          "Monday": "11:00 am - 4:00 pm",
+          "Tuesday": "11:00 am - 4:00 pm",
+          "Wednesday": "11:00 am - 4:00 pm",
+          "Thursday": "11:00 am - 4:00 pm",
+          "Friday": "11:00 am - 4:00 pm",
+          "Saturday": "Closed",
+          "Sunday": "Closed"
+        }
+      },
 
-
-
-
+      // TBD placeholder 2 — fill in every "TBD" before this goes live
+      {
+        slug: "tbd-2",
+        name: "TBD",
+        description: "TBD",
+        image: "",
+        category: "sandwiches",
+        location: "state-street-library-mall",
+        locationDisplayName: "TBD",
+        mapsUrl: "",
+        menu: [        
+        ],
+        schedule: {
+          "Monday": "TBD",
+          "Tuesday": "TBD",
+          "Wednesday": "TBD",
+          "Thursday": "TBD",
+          "Friday": "TBD",
+          "Saturday": "TBD",
+          "Sunday": "TBD"
+        }
+      },
 
     ];
 
