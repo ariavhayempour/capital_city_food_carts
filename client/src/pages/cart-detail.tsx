@@ -237,6 +237,10 @@ const MENU_CONFIG: Record<string, MenuConfig> = {
   "pagoda_smoothies": {
     type: 'categorized',
     categoryOrder: ["Smoothies", "Tapioca Freeze", "Boba Milk Tea (Hot / Cold)", "Flavored Ice Tea (with Jelly / Tapioca)", "Other Drinks", "Toppings"]
+  },
+  "tacos_pechu_3": {
+    type: 'categorized',
+    categoryOrder: ["Entrees", "Protein", "Drinks"]
   }
 };
 

@@ -92,4 +92,8 @@
     <loc>https://capitalcityfoodcarts.com/cart/pagoda_smoothies</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://capitalcityfoodcarts.com/cart/tacos_pechu_3</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

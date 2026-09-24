@@ -824,7 +824,7 @@ export class MemStorage implements IStorage {
       {
         slug: "bulgogi_korean",
         name: "Bulgogi Korean Tacos",
-        description: "Korean-Mexican bulgogi fusion.",
+        description: "Korean-Mexican bulgogi fusion",
         image: "/bulgogi_pic.jpg",
         category: "asian",
         location: "state-street-library-mall",
@@ -853,7 +853,7 @@ export class MemStorage implements IStorage {
       {
         slug: "pagoda_smoothies",
         name: "Pagoda Smoothies",
-        description: "Fresh smoothies, boba, and tea.",
+        description: "Fresh smoothies, boba, and tea",
         image: "/pagoda_pic.jpg",
         category: "drinks",
         location: "state-street-library-mall",
@@ -903,6 +903,57 @@ export class MemStorage implements IStorage {
           "Thursday": "11:00 am - 4:00 pm",
           "Friday": "11:00 am - 4:00 pm",
           "Saturday": "Closed",
+          "Sunday": "Closed"
+        }
+      },
+
+      // Tacos el Pechu 3
+      {
+        slug: "tacos_pechu_3",
+        name: "Tacos El Pechu 3",
+        description: "Late night Mexican eats",
+        image: "/pechu_pic.jpg",
+        category: "mexican",
+        location: "state-street-library-mall",
+        locationDisplayName: "State Street & Library Mall",
+        mapsUrl: "https://maps.google.com/?q=43.075000,-89.398361",
+        menu: [
+          // Entrees
+          { name: "Tacos", price: "$3.50", description: "", category: "Entrees" },
+          { name: "Torta", price: "$11.00", description: "", category: "Entrees" },
+          { name: "Burrito", price: "$11.00", description: "", category: "Entrees" },
+          { name: "Bowl", price: "$11.00", description: "", category: "Entrees" },
+          { name: "Quesadilla", price: "$13.00", description: "", category: "Entrees" },
+          { name: "Quesadilla Tortilla Hecha a Mano", price: "$13.00", description: "", category: "Entrees" },
+          { name: "Quesibirrias", price: "$15.00", description: "", category: "Entrees" },
+          { name: "Gordita", price: "$4.00", description: "", category: "Entrees" },
+          { name: "Super Nachos", price: "$13.00", description: "", category: "Entrees" },
+          { name: "Taco Dinner", price: "$15.00", description: "", category: "Entrees" },
+          { name: "Taco Tray", price: "$63.00", description: "", category: "Entrees" },
+
+          // Protein
+          { name: "Asada", price: "", description: "Steak.", category: "Protein" },
+          { name: "Pastor", price: "", description: "Marinated pork.", category: "Protein" },
+          { name: "Barbacoa", price: "", description: "Shredded beef.", category: "Protein" },
+          { name: "Carnitas", price: "", description: "Pulled pork.", category: "Protein" },
+          { name: "Pollo", price: "", description: "Chicken.", category: "Protein" },
+          { name: "Chorizo", price: "", description: "Mexican sausage.", category: "Protein" },
+          { name: "Lengua", price: "", description: "Beef tongue.", category: "Protein" },
+          { name: "Cecina", price: "", description: "Thin salted steak.", category: "Protein" },
+          { name: "Arrachera", price: "", description: "Inside skirt.", category: "Protein" },
+
+          // Drinks
+          { name: "Horchata", price: "$5.00", description: "", category: "Drinks" },
+          { name: "Coca", price: "$4.00", description: "", category: "Drinks" },
+          { name: "Jarritos", price: "$3.50", description: "", category: "Drinks" }
+        ],
+        schedule: {
+          "Monday": "Closed",
+          "Tuesday": "Closed",
+          "Wednesday": "Closed",
+          "Thursday": "7:30 pm - 2:00 am",
+          "Friday": "7:30 pm - 2:00 am",
+          "Saturday": "7:30 pm - 2:00 am",
           "Sunday": "Closed"
         }
       },
