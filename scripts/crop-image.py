@@ -8,7 +8,7 @@ img = Image.open('attached_assets/jollyfrog_pic.jpg')
 width, height = img.size
 
 # Crop to show top 70% of the image (removes bottom 30% which is mostly ground)
-# This will emphasize the truck and building more
+# This will emphasize the truck and building  more
 crop_box = (0, 0, width, int(height * 0.7))
 
 # Crop the image
