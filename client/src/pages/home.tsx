@@ -74,6 +74,7 @@ export default function MadisonFoodCartHomePage() {
   return (
     <div className="home-page-container">
       <SiteNavigationHeader />
+      <main>
       <FoodCartHeroBanner />
       <div id="carts" className="food-carts-section-wrapper">
         <FoodCartSearchAndFilter
@@ -152,6 +153,7 @@ export default function MadisonFoodCartHomePage() {
 
       <CapitalCityFoodCartsAboutSection />
       <FoodCartNewsletterSignup />
+      </main>
       <SiteContactFooter />
     </div>
   );

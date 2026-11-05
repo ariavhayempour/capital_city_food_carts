@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Capital City Food Carts | Madison, WI Food Cart Directory</title>
     <meta name="description" content="Find Madison, Wisconsin food carts near State Street, Library Mall, and the UW-Madison campus. Browse menus, hours, and locations for local carts." />
@@ -10,6 +10,23 @@
     <meta name="author" content="Capital City Food Carts" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://capitalcityfoodcarts.com/" />
+
+    <!-- Home hero is the LCP image; start it before the JS bundle renders the <img>.
+         Stripped from per-cart pages by scripts/generate-seo-files.ts. -->
+    <link rel="preload" as="image" type="image/webp" fetchpriority="high" data-home-hero
+          href="/capitol-state-street-1600.webp"
+          imagesrcset="/capitol-state-street-960.webp 960w, /capitol-state-street-1600.webp 1600w"
+          imagesizes="100vw" />
+    <link rel="preload" as="fetch" href="/carts.json" crossorigin="use-credentials" />
+
+    <!-- Fonts load without blocking first paint (font-display: swap via the URL). -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" media="print" onload="this.media='all'"
+          href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&display=swap" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&display=swap" />
+    </noscript>
 
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
