@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Leaf, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { capitalizeFirst, isCurrentlyOpen } from "@/lib/utils";
+import { capitalizeFirst, cardImageSources, isCurrentlyOpen } from "@/lib/utils";
 import type { FoodCart } from "@shared/schema";
 
 interface CartCardProps {
@@ -16,9 +16,14 @@ export default function IndividualFoodCartCard({ cart }: CartCardProps) {
     <Card className="food-cart-card">
       <div className="cart-card-image-wrapper">
         <img
-          src={cart.image}
+          {...cardImageSources(cart.image)}
+          sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
           alt={`${cart.name} food cart`}
           className="cart-card-image"
+          loading="lazy"
+          decoding="async"
+          width={800}
+          height={368}
         />
         <span className="cart-category-badge">
           {capitalizeFirst(cart.category.replace(/_/g, ' '))}

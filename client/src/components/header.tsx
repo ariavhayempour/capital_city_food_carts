@@ -90,6 +90,9 @@ export default function SiteNavigationHeader() {
               size="sm"
               onClick={toggleMobileMenu}
               className="mobile-menu-toggle"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-dropdown-menu"
             >
               {isMobileMenuOpen ? <X className="mobile-menu-close-icon" /> : <Menu className="mobile-menu-open-icon" />}
             </Button>
@@ -99,7 +102,7 @@ export default function SiteNavigationHeader() {
       
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="mobile-dropdown-menu">
+        <div id="mobile-dropdown-menu" className="mobile-dropdown-menu">
           <div className="mobile-menu-container">
             <button className="mobile-home-button" onClick={() => { setIsMobileMenuOpen(false); scrollToSection('home'); }}>
               Home

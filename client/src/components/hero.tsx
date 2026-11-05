@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
 import type { FoodCart } from "@shared/schema";
-import capitolStateStreet from "@assets/capitol-state-street.jpg";
 
 const CUISINE_LABELS: Record<string, string> = {
   american: "American",
@@ -25,7 +24,17 @@ export default function FoodCartHeroBanner() {
   return (
     <section id="home" className="hero-section">
       <div className="hero-bg">
-        <img src={capitolStateStreet} alt="State Street looking toward the Wisconsin State Capitol in Madison" />
+        {/* Preloaded from index.html with the same srcset/sizes so this request is reused. */}
+        <img
+          src="/capitol-state-street-1600.webp"
+          srcSet="/capitol-state-street-960.webp 960w, /capitol-state-street-1600.webp 1600w"
+          sizes="100vw"
+          alt="State Street looking toward the Wisconsin State Capitol in Madison"
+          fetchPriority="high"
+          decoding="async"
+          width={1600}
+          height={968}
+        />
       </div>
 
       <div className="hero-content-container">

@@ -3,7 +3,7 @@ import { AlertCircle } from "lucide-react";
 
 export default function PageNotFoundError() {
   return (
-    <div className="not-found-page-container">
+    <main className="not-found-page-container">
       <Card className="not-found-card">
         <CardContent className="not-found-card-content">
           <div className="not-found-header">
@@ -16,6 +16,6 @@ export default function PageNotFoundError() {
           </p>
         </CardContent>
       </Card>
-    </div>
+    </main>
   );
 }

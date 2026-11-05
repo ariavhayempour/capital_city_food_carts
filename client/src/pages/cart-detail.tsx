@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
 import SiteNavigationHeader from "@/components/header";
 import SiteContactFooter from "@/components/footer";
-import { isCurrentlyOpen, capitalizeFirst } from "@/lib/utils";
+import { isCurrentlyOpen, capitalizeFirst, webpFor } from "@/lib/utils";
 import { ArrowLeft, MapPin, Clock, Globe, Link2, ShoppingBag, FileText, Monitor } from "lucide-react";
 import React from "react";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -279,9 +279,11 @@ function MenuContent({ cart }: MenuContentProps) {
       return (
         <div className="menu-category">
           <img
-            src={config.imageSrc}
+            src={config.imageSrc && webpFor(config.imageSrc)}
             alt={config.imageAlt}
             className="menu-image"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       );
@@ -504,7 +506,7 @@ export default function IndividualFoodCartDetailPage() {
     return (
       <div className="detail-page-container">
         <SiteNavigationHeader />
-        <div className="detail-not-found">
+        <main className="detail-not-found">
           <h1>Food Cart Not Found</h1>
           <p>The food cart you're looking for doesn't exist.</p>
           <Link href="/">
@@ -513,7 +515,7 @@ export default function IndividualFoodCartDetailPage() {
               Back to Home
             </button>
           </Link>
-        </div>
+        </main>
         <SiteContactFooter />
       </div>
     );
@@ -536,6 +538,7 @@ export default function IndividualFoodCartDetailPage() {
   return (
     <div className="detail-page-container">
       <SiteNavigationHeader />
+      <main>
 
       <div className="back-bar">
         <div className="wrap">
@@ -561,7 +564,7 @@ export default function IndividualFoodCartDetailPage() {
       {cart && (
         <>
           <section className="detail-hero">
-            <img src={cart.image} alt={cart.name} />
+            <img src={webpFor(cart.image)} alt={cart.name} fetchPriority="high" decoding="async" />
             <div className="wrap detail-hero-content">
               <span className={`detail-hero-stamp ${isCurrentlyOpen(cart.schedule) ? "open" : "closed"}`}>
                 {isCurrentlyOpen(cart.schedule) ? "Open Now" : "Closed"}
@@ -668,6 +671,7 @@ export default function IndividualFoodCartDetailPage() {
           </section>
         </>
       )}
+      </main>
 
       <SiteContactFooter />
     </div>

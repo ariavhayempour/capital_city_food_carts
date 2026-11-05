@@ -131,6 +131,13 @@ function generateCartPages(carts: FoodCart[]) {
       .replace(/(<meta name="twitter:image" content=")[^"]*(")/, `$1${escImage}$2`)
       .replace(/(<meta name="twitter:image:alt" content=")[^"]*(")/, `$1${escTitle}$2`);
 
+    // Swap the home hero preload for this cart's own hero image (its LCP element).
+    const homeHeroPreloadRegex = /<link rel="preload" as="image"[^>]*data-home-hero[^>]*>/s;
+    const cartHeroPreload = /^https?:\/\//.test(cart.image)
+      ? ''
+      : `<link rel="preload" as="image" fetchpriority="high" href="${escapeHtml(cart.image.replace(/\.jpg$/, '.webp'))}" />`;
+    html = html.replace(homeHeroPreloadRegex, cartHeroPreload);
+
     // Strips the base page's WebSite + ItemList schemas, neither valid for a single cart.
     const schemaScriptRegex = /<script type="application\/ld\+json">.*?<\/script>\s*/gs;
     const newSchemaScript = `<script type="application/ld+json">${JSON.stringify(cartSchema)}</script>\n  `;

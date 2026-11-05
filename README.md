@@ -55,6 +55,7 @@ capital_city_food_carts/
 │   └── vite.ts          # Vite dev server configuration
 ├── scripts/             # Build and utility scripts
 │   ├── export-carts.ts  # Exports storage.ts to carts.json
+│   ├── optimize-images.sh # Resizes cart photos + writes WebP variants (run after adding a photo)
 │   └── crop-image.py    # Image preprocessing script
 ├── shared/              # Shared TypeScript types/schemas
 │   └── schema.ts        # Food cart data schema
